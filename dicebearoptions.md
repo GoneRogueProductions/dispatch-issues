@@ -8,7 +8,7 @@
 - bgcolors:80deea/81d4fa/ffab91/ffcc80
 - bgrotation:0/360
 
-### example with patches
+### example with Patches
 #### the thing
 <img
   style="height:25%;width:25%;"
@@ -63,7 +63,7 @@ dicebear icons . \
 - bgcolors:ffbfdf/b6e3f4/c0aede/d1d4f9/ffd5dc
 - bgrotation:0/360
 
-### example with patches
+### example with Patches
 #### the thing
 <img
 style="height:25%;width:25%;"
@@ -109,61 +109,70 @@ dicebear identicon . \
   --radius 50 \
   --backgroundType 'gradientLinear' \
   --backgroundColor 'ffdfbf' 'ffd5dc' 'd1d4f9' 'c0aede' 'b6e3f4'
+  --fontfam sans serif
   
 
- ## shapes
+ ## initials
   
-<!-- - scale: 70%
+- scale:140%
 - radius:50
 - bgtype: gradient linear
-- bgcolors:ffbfdf/b6e3f4/c0aede/d1d4f9/ffd5dc
+- bgcolors:f4511e/fb8c00/ffb300/ffdfbf/00acc1/1e88e5/b6e3f4
 - bgrotation:0/360
 
-### example with patches
+### example with Patches
 #### the thing
 <img
-style="height:25%;width:25%;"
-  src="https://api.dicebear.com/5.x/identicon/svg?seed=Patches&scale=70&radius=50&backgroundType=gradientLinear&backgroundColor=ffdfbf,ffd5dc,d1d4f9,c0aede,b6e3f4"
+   style="height:25%;width:25%;"
+  src="https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif&fontWeight=0"
   alt="avatar" />
 #### http
-https://api.dicebear.com/5.x/identicon/svg?seed=Patches&scale=70&radius=50&backgroundType=gradientLinear&backgroundColor=ffdfbf,ffd5dc,d1d4f9,c0aede,b6e3f4
+https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif&fontWeight=0
 #### html
 img
-  src="https://api.dicebear.com/5.x/identicon/svg?seed=Patches&scale=70&radius=50&backgroundType=gradientLinear&backgroundColor=ffdfbf,ffd5dc,d1d4f9,c0aede,b6e3f4"
-  alt="avatar" / REMBER TO READD THE < AND THE >
+  src="https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif&fontWeight=0"
+  alt="avatar" /
+ REMBER TO READD THE < AND THE >
   
 #### js
-- install with npm first \-\-\> npm install @dicebear/core @dicebear/collection --save
-- then use \-\-\>
+- install with npm first --> npm install @dicebear/core @dicebear/collection --save
+- then use -->
 import { createAvatar } from '@dicebear/core';
-import { identicon } from '@dicebear/collection';
+import { initials } from '@dicebear/collection';
 
-const avatar = createAvatar(identicon, {
+const avatar = createAvatar(initials, {
   "seed": "Patches",
-  "scale": 70,
+  "scale": 140,
   "radius": 50,
+  "backgroundColor": [
+    "ffb300",
+    "ffdfbf",
+    "f4511e",
+    "fb8c00",
+    "b6e3f4",
+    "1e88e5",
+    "00acc1"
+  ],
   "backgroundType": [
     "gradientLinear"
   ],
-  "backgroundColor": [
-    "ffdfbf",
-    "ffd5dc",
-    "d1d4f9",
-    "c0aede",
-    "b6e3f4"
-  ]
+  "fontFamily": [
+    "sans-serif"
+  ],
+  "fontWeight": 0
 });
 
 const svg = avatar.toString();
 
 #### cli
-- install using npm first \-\-\> npm install --global dicebear
-- then use \-\-\>
-dicebear identicon . \
+- install using npm first --> npm install --global dicebear
+- then use -->
+dicebear initials . \
   --seed 'Patches' \
-  --scale 70 \
+  --scale 140 \
   --radius 50 \
+  --backgroundColor 'ffb300' 'ffdfbf' 'f4511e' 'fb8c00' 'b6e3f4' '1e88e5' '00acc1' \
   --backgroundType 'gradientLinear' \
-  --backgroundColor 'ffdfbf' 'ffd5dc' 'd1d4f9' 'c0aede' 'b6e3f4'
-  -->
-  comming soon.......
+  --fontFamily 'sans-serif' \
+  --fontWeight 0
+  
