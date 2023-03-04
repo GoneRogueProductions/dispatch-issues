@@ -119,18 +119,20 @@ dicebear identicon . \
 - bgtype: gradient linear
 - bgcolors:f4511e/fb8c00/ffb300/ffdfbf/00acc1/1e88e5/b6e3f4
 - bgrotation:0/360
+- fontfamily : sans serif
 
 ### example with Patches
 #### the thing
-<img
-   style="height:25%;width:25%;"
-  src="https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif&fontWeight=0"
-  alt="avatar" />
+<img style="height:25%;width:25%;" src="https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif" alt="avatar" />
+
 #### http
-https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif&fontWeight=0
+
+https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif
+
 #### html
+
 img
-  src="https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif&fontWeight=0"
+  src="https://api.dicebear.com/5.x/initials/svg?seed=Patches&scale=140&radius=50&backgroundColor=ffb300,ffdfbf,f4511e,fb8c00,b6e3f4,1e88e5,00acc1&backgroundType=gradientLinear&fontFamily=sans-serif"
   alt="avatar" /
  REMBER TO READD THE < AND THE >
   
@@ -159,7 +161,6 @@ const avatar = createAvatar(initials, {
   "fontFamily": [
     "sans-serif"
   ],
-  "fontWeight": 0
 });
 
 const svg = avatar.toString();
@@ -173,6 +174,5 @@ dicebear initials . \
   --radius 50 \
   --backgroundColor 'ffb300' 'ffdfbf' 'f4511e' 'fb8c00' 'b6e3f4' '1e88e5' '00acc1' \
   --backgroundType 'gradientLinear' \
-  --fontFamily 'sans-serif' \
-  --fontWeight 0
+  --fontFamily 'sans-serif' 
   
